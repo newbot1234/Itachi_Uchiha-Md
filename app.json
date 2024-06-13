@@ -1,53 +1,55 @@
 {
-    "name": "1999namezo-MD",
-    "description": "A WhatsApp bot based on Baileysjs with Multi-Device support",
-    "repository": "1999#Linkzo",
-    "logo": "https://telegra.ph/file/351133422917a8bd7d776.jpg",
-    "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
-      "env": {
-       "OWNER_NAME": {
-      "description": "Put Owner Name Here"
+  "name": "Itachi_Uchiha-Md",
+  "description": " Whatsapp bot.",
+  "keywords": [
+    "whatsapp bot"
+  ],
+  "repository": "https://github.com/DeeCeeXxx/Itachi_Uchiha-Md",
+  "stack": "container",
+  "env": {
+       "DATABASE_URL": {
+      "description": "your mongodb database url optional",
+      "required": false,
+      "value": ""
+      },
+     "MODE": {
+      "description": "mode public or private",
+      "required": true,
+      "value": "public"
+       },
+    "antidelete": {
+      "description": "bot will forward deleted messages if you make it true",
+      "required": false,
+      "value": "false"
+       },
+    "statusview": {
+      "description": "make it true if you want bot to view status",
+      "required": false,
+      "value": ""
     },
-        "OWNER_NUMBER": {
-      "description": "Put your number here"
+    "autoRead": {
+      "description": "make it true if you want bot to read messages",
+      "required": false,
+      "value": ""
     },
-         "BOTNAME": {
-      "description": "Name of your bot. Ex: - 1999namezo-Bot"
+    "SESSION_ID": {
+      "description": "your session id",
+      "required": true,
+      "value": ""
+    }
     },
-     "PREFIX": {
-      "description": "set your bot prefix here ex:- '!' "
-     },
-    "AUTHOR": {
-      "description": "set your bot author name here"
-    },
-    "STICKER": {
-      "description": "set your bot sticker package name ex:- 1999namezo"
-    },
-     "id": {
-      "description": "Put your session id here"
-    },     
-     "PM_BLOCKER": {
-      "description": "type True for enable Pm blocker"
-    },
-     "WELCOME": {
-      "description": "Type True for enable welcome message"
-    }     
-  },
     "buildpacks": [
-      {
-        "url": "heroku/nodejs"
-      },
-      {
-        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-      },
-      {
-        "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
-      }
-    ],
-     "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "basic"
-          }
-     }
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick.git"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    },
+    {
+      "url": "https://github.com/clhuang/heroku-buildpack-webp-binaries.git"
+    }
+  ]
 }
