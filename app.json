@@ -1,8 +1,8 @@
 {
-    "name": "1999namezo-MD",
+    "name": "Itachi-Uchiha-Md",
     "description": "A WhatsApp bot based on Baileysjs with Multi-Device support",
-    "repository": "1999#Linkzo",
-    "logo": "https://telegra.ph/file/351133422917a8bd7d776.jpg",
+    "repository": "https://github.com/DeeCeeXxx/Itachi_Uchiha-Md",
+    "logo": "https://i.imgur.com/FCIPs29.jpeg",
     "keywords": ["nodejs", "bot", "whatsapp bot", "whatsapp automation", "multi device"],
       "env": {
        "OWNER_NAME": {
@@ -12,10 +12,10 @@
       "description": "Put your number here"
     },
          "BOTNAME": {
-      "description": "Name of your bot. Ex: - 1999namezo-Bot"
+      "description": "Name of your bot. Ex: - Itachi Uchiha"
     },
      "PREFIX": {
-      "description": "set your bot prefix here ex:- '!' "
+      "description": "set your bot prefix here ex:- '.' "
      },
     "AUTHOR": {
       "description": "set your bot author name here"
