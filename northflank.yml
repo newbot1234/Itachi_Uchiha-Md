@@ -1,0 +1,11 @@
+version: '1.0'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    run:
+      cmd: ["npm", "start"]
+    ports:
+      - port: 3000
+        protocol: http
