@@ -1,11 +1,16 @@
 version: '1.0'
 services:
   app:
+    image: node:14
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        NODE_ENV: "production"
+        APP_VERSION: "1.0.0"
     run:
       cmd: ["npm", "start"]
-    ports:
-      - port: 3000
-        protocol: http
+      port: 3000
+    environment:
+      NODE_ENV: "production"
+      APP_VERSION: "1.0.0"
